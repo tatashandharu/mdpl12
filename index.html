@@ -105,6 +105,279 @@
             <li>Release <br>Pada tahapan ini melakukan publikasi awal pada toko buku muslimsunnah.id dengan tujuan agar dapat di akses secara luas.</li>
         </ol>
             
+        <h1>BAB IV <br>  HASIL DAN PEMBAHASAN</h1>
+        <h2>A.	Development</h2>
+        <h3>a.	Plan</h3>
+        <p style="text-align: justify; text-indent: 0.5in;">Plan digunakan untuk menjelaskan perancangan siapa saja yang akan menjadi pengguna sistem beserta tugas dan tujuannya. Hal ini sangat penting karena daftar dari plan tersebut akan digunakan untuk proses pengembangan sistem selanjutnya. Berikut adalah daftar plan yang berhasil dikumpulkan.</p>
+        <h4>1. Plan System</h4>
+        <h5>1.1.	Kebutuhan Fungsional</h5>
+        <p>Analisa kebutuhan bertujuan mengetahui kebutuhan-kebutuhan yang nantinya akan digunakan untuk pengguna aplikasi, yaitu :</p>
+        <ol type="1"> 
+            <li>Admin</li>
+                <a>•    Admin harus melakukan login menggunakan username dan password yang sudah tervalidasi. </a> <br>
+                <a>•	Admin dapat mengakses data yang berkaitan dengan : 
+                    <dd>	Data buku  <br>
+                        	Data customer <br>
+                        	Data kategori <br>
+                        	Data penerbit <br>
+                        	Data pengarang <br>
+                        	Data transaksi <br>
+                        	Data user <br>
+                    </dd>
+                </a>
+                <a> bisa logout setelah selesai mengakses website </a>
+            <li>Customer / pembeli </li>
+                <a>•	Customer dapat melakukan login dengan mennggunakan  username dan password jika sudah memiliki akun atau bisa melakukan registrasi terlebih dahulu.</a> <br>
+                <a>•	Castemer bisa mengakses, diantaranya adalah :
+                    <dd>	Melihat buku <br>
+                        	Menambahkan buku ke dalam keranjang penjualan <br>
+                        	Melakukan pembelian <br>
+                        	Melakukan transaksi <br>
+                        	Melihat data pembelin <br>
+                        </dd>
+                </a>
+                <a>•	Customer bisa melakukan logout setelah selesai mengakses website </a>
+        </ol>
+        <h5>1.2.	Kebutuhan Non Fungsional</h5>
+        <ol type="1">
+            <li>Analisa Kebutuhan Hardware</li>
+            <p>Kebutuhan Spesifikasi PC (Personal Computer) yang digunakan yaitu :</p>
+                <dd>	Processor minimal Core i32.0 GHz <br>
+                    	RAM 6 GB <br>
+                    	VGA NVDIA GeForce 930MX  <br>
+                    	Harddisk minimaal 500 GB
+                </dd>
+            <li>Analisa Kebutuhan Software</li>
+            <p>Software yang digunakan adalah sebagai berikut : </p>
+                <dd>	Web <br>
+                    	Sistem Operasi Microsoft Windows 10 / linux / mac os <br>
+                    	Data Base MySql
+                </dd>
+        </ol>
+        <h4>2.	Plan Estimasi Waktu </h4>
+        <p style="text-align: justify; text-indent: 0.5in;">Berikut adalah plan estimasi waktu pengerjaan yang di rangkum pada bentuk table:</p>
+        <img src="https://drive.google.com/uc?id=1myu3_PTXgX-71Qh-X7geFTQPKg1btp5n" alt="" style="height: auto;">
+        <img src="https://drive.google.com/uc?id=1wwpgONyMu45RcGtmRakDIBXhS75-28Wt" alt="" style="height: auto;">
+
+        <h4>Plan Desaign </h4>
+        <h5>3.1.	Desaign Sistem </h5>
+        <p style="text-align: justify; text-indent: 0.5in;">Berikutnya dirancanglah sistem informasi menggunakan DFD (Data Flow Diagram) yang merupakan salah satu teknik pemodelan desain sistem berbasis web. Pemodelan ini menjadi bagian penting dalam pengembangan sistem karena menjadi satu satunya cara untuk memvisualisasikan desain sistem dan memeriksa apakah sudah memenuhi standar yang diinginkan sebelum memulai coding. Beberapa jenis Diagram yang dibuat antara lain yaitu Diagram koneks, DFD dan ERD.</p>
+        <ol type="a">
+            <li>Diagram Konteks <br><img src="https://drive.google.com/uc?id=1IyEdHOr8knOPfhWA4jjgvZWCAD3akB9W" alt="" style="width: auto; height: auto;"></li>
+            <li>Data Flow Diagram</li>
+            <ul>
+                <li>Diagram berjenjang <br><img src="https://drive.google.com/uc?id=1iyA-fHCzqo2YQ6nEviuXOjHRY3A7Aeu4" alt="" style="width: auto;"></li>
+                <li>diagram level 1 <br><img src="https://drive.google.com/uc?id=1qUnZaCGt9FdHyr_jNNQwV23vDgJ37egY" alt="" style="height: auto;"></li>
+                <li>diagram level 1.2 <br><img src="https://drive.google.com/uc?id=1mKl4eyKxgIXSB3QAbceagAbnzARutj7k" alt="" style="height: auto;"></li>
+                <li>Diagram level 1.3 br <img src="https://drive.google.com/uc?id=1dElFSC0eQlxqYvgUzXY9p2rbKlS3hLl5" alt="" style="height: auto;"></li>
+            </ul>
+            <li>Entity Releationship Diagram <br><img src="https://drive.google.com/uc?id=1miJoErwSuA1wzdXSiyDbQ6q3rFktVN1q" alt="" style="height: 600px; width: 1100px;"></li>
+            <li>Perancangan Database <br><img src="https://drive.google.com/uc?id=1mKpTNWuh0zKlfahdCEozM3iuth-neoSJ" alt="" style="height: 600px; width: 1100px;"></li>
+            <ul>
+                <li>Buku <br>
+                    Primary key	: id_buku <br>
+                    Jumlah field	: 11<br>
+                    <img src="https://drive.google.com/uc?id=1pT9iq0QaBkF-HY8Db9auM5LgogzznC7N" alt="buku" style="height: auto;"></li>
+                <li>Custumer <br>
+                    Primary key 	: id_custumer <br>
+                    Jumlah field	: 7<br>
+                    <img src="https://drive.google.com/uc?id=1mxXgRzvba1-yPjbdhihcexy_hb99V0dX" alt="Custumer" style="height: auto;"></li>
+                <li>Ketrgory<br>
+                    Primary key 	: id_kategori<br>
+                    Jumlah field 	: 3<br>
+                    <img src="https://drive.google.com/uc?id=1zKMJPIdEEF74tY6ul8xCysfEu5gNNrzE" alt="Ketrgory" style="height: auto;">
+                    </li>
+                <li>Penerbit <br>
+                    Primary key 	: id_penerbit <br>
+                    Jumlah field 	: 6<br>
+                    <img src="https://drive.google.com/uc?id=1wcLFZGKJ9qGdX-aOBJofeyLNVfg3CtUM" alt="Penerbit" style="height: auto;">
+                    </li>
+                <li>User <br>
+                    Primary key 	: (none)<br>
+                    Jumlah field 	: 5<br>
+                    <img src="https://drive.google.com/uc?id=155gwlBcNM_a24SZoeUP7U9v2LC9wOdVk" alt="User" style="height: auto;">
+                    </li>
+                <li>Pengarang <br>
+                    Primary key 	: id_pengarang <br>
+                    Jumlah field	: 6<br>
+                    <img src="https://drive.google.com/uc?id=1SkppKJm3QjwunFJdfg83cDIpq41kXy1m" alt="Pengarang" style="height: auto;">
+                    </li>
+                <li>Pemesanan <br>
+                    Primary key 	: (none) <br>
+                    Jumlah field 	: 6 <br>
+                    <img src="https://drive.google.com/uc?id=13elEz0Yi2pWN4yNwj314Hov85kBEQmcE" alt="">
+                </li>
+                <li>Pembayaran <br>
+                    Primary key 	: (none) <br>
+                    Jumlah field 	: 6 <br>
+                    <img src="https://drive.google.com/uc?id=1eM-MPucM2VgB_sYioGfSdL7JpaRdiDB0" alt="">
+                    </li>
+            </ul>
+        </ol>
+
+        <h3>e.	Desain UI</h3>
+        <h4>A. Tampilan</h4>
+            <p>
+                Login 
+            </p>
+            <img src="https://drive.google.com/uc?id=1otA3bG22VkbIr-bd0qoGnQkk9smul8Wq" alt="login" style="height: auto;">
+            <p>
+                Registrasi
+            </p>
+            <img src="https://drive.google.com/uc?id=1Jdaxaasqr7NPMIeSfC3VKV3mZxUJ_u23" alt="Registrasi" style="height: auto;">
+            <p>
+                Dasbord Admin 
+            </p>
+            <img src="https://drive.google.com/uc?id=1ygB3203fJBQnVSeAa9GqOrWcEZNLPiod" alt="Dasbord Admin" style="height: auto;">
+            <p>
+                Data Buku 
+            </p>
+            <img src="https://drive.google.com/uc?id=1yC8OwpCoDcuxsV13ZdjjJe20EgyCFNYM" alt="data Buku" style="height: auto;">
+            <p>
+                Data Customer 
+            </p>
+            <img src="https://drive.google.com/uc?id=1_cDDrpxz05K0tGuxux606Nt1zMWUVdNa" alt="Data Customer" style="height: auto;">
+            <p>
+                Data Kategori 
+            </p>
+            <img src="https://drive.google.com/uc?id=1kT4Zbvm66jJUiiKeG9PhP4vKUWCScYOe" alt="Data Penerbit" style="height: auto;">
+            <p>
+                Data Penerbit 
+            </p>
+            <img src="https://drive.google.com/uc?id=1Eb50jOTohC9r3TO_sATM3VW8coUd2ctx" alt="Data Penerbit" style="height: auto;">
+            <p>
+                Data Pengarang
+            </p>
+            <img src="https://drive.google.com/uc?id=1wdWLBZ2LqSTwD1KSYusGVeBbO5odxkT3" alt="Data Pengarang" style="height: auto;">
+            <p>
+                Data Transaksi 
+            </p>
+            <img src="https://drive.google.com/uc?id=1e4avBi95SYnY79j49Ohk4tXCPsz__7Z9" alt="Data Transaksi" style="height: auto;">
+            <p>
+                Data User
+            </p>
+            <img src="https://drive.google.com/uc?id=1yVtS1Kzg0uYjcUd7EZWkAEf3xo8ZEZ10" alt="Data User" style="height: auto;">
+            <p>
+                Halaman Utama User 
+            </p>
+            <img src="https://drive.google.com/uc?id=1ZYil3Cl7tRvdeq2SGvKNrTvFV8IkQAEJ" alt="Halaman Utama" style="height: auto;">
+            <p>
+                Cart 
+            </p>
+            <img src="https://drive.google.com/uc?id=1MSum3VYKnADhcexef6csiDdi9TbOeyiw" alt="cart" style="height: auto;">
+            <p>
+                MY Order 
+            </p>
+            <img src="https://drive.google.com/uc?id=1P9BzHqmW_PvKsR9UVQLmrxnrGLwysMSM" alt="my order" style="height: auto;">
+
+            <h4>B. code</h4>
+            <p style="text-align: justify; text-indent: 0.5in;">Kode aplikais Berbasis Web dikembangkan dengan menggunakan Bahasa pemrograman dan dikelola dengan menggunakan sistem Database . Berikut daftar beberapa koding dengan bahasa pemograman yang sudah di rancang :</p>
             
+            <p><b>login <br></b>
+                code
+            </p>
+            <img src="https://drive.google.com/uc?id=1kKflbo9KUCQLiRLiTbv6M5-F3q60XLqi" alt="" style="height: auto;">
+            <p style="text-align: justify; text-indent: 0.5in;">Penjelasan : ini adalah tampilan halaman login. Dan untuk memproses data/ mengecek apakah valid setelah login, bisa dilihat di form action process/ceklogin.php
+                Dibagian div class wrap input untuk mengimput username dan password dan selain login , ada halaman register untuk membuat akun baru bagi customer yang belum mempunyai akun
+            <br>Cek_login.php</p>
+            <img src="https://drive.google.com/uc?id=15j9GI08sdFUv6ptwF5zDf0B1OAy_sRc2" alt="" style="right: auto;">
+            <p style="text-align: justify; text-indent: 0.5in;">Penjelasan : setelah menginput username dan password maka login tersebut memproses inputannya($_SESSION) apakah data yang di input sesuai di database dan tipe user untuk admin atau customer
+                Jika login sebagai admin(if $data[‘tipe_user’]== admin)  maka masuk kehalaman dashboard.php
+                Else header(‘location../../index.php’) jika salah Kembali ke halaman login 
+                Dan ada pemberitahuan alert(‘username dan password salah’)
+            </p>
+            
+            <p><b> Registrasi <br></b>
+                code 
+            </p>
+            <img src="https://drive.google.com/uc?id=1TOpjESUX2UpdneMg1wIp4ViUWKXgsRsN" alt="" style="height: auto;">
+            <p style="text-align: justify; text-indent: 0.5in;">Penjelasan: ini adalah tampilan register untuk customer yang belum mempunyai akun, Customer menginput data seperti nama,jenis kelamin,alamat,email,telpon,username dan password dan setelah menginput akan di proses dibagian form action= process/add_data.php <br> add_data.php</p>
+             <img src="https://drive.google.com/uc?id=1rMkVwtyL7Yz90lbM9m8XogAKO0wqz0xR" alt="">
+             <p style="text-align: justify; text-indent: 0.5in;">Penjelasan: ini adalah tampilan register untuk customer yang belum mempunyai akun, Customer menginput data seperti nama,jenis kelamin,alamat,email,telpon,username dan password dan setelah menginput akan di proses dibagian form action= process/add_data.php
+
+                Add_data.php
+                 
+                Penjelasan = Dibagian add_data.php adalah proses halaman yang telah diinput datanya oleh customer dan menambahkan datanya ke database mysql 
+                Jika (mysqli_query($con, $query) && mysqli_query($con, $query2)) telah masuk di database dan dijalankan query nya maka Kembali ke halaman login untuk menginputkan Kembali username password
+                Jika menginput username password salah maka alert”Login gagal”
+            </p>
+
+            <p><b>My Order <br></b> 
+                code 
+            </p>
+            <img src="https://drive.google.com/uc?id=16rWEwkH34C1E1Mh33pUKbQMh01dZoboc" alt="" style="height: auto;">
+            <p style="text-align: justify; text-indent: 0.5in;">Penjelasan: ini adalah tampilan my order yaitu tampilan yang telah sukses berbelanja buku dan dijadikan laporan untuk dilihat customer. Kolom kolom yang dilihat oleh customer seperti id transaksi,judul buku, tanggal transaksi, jumlah, total. Dan "SELECT * from kategori order by nama_kategori";
+                Adalah memilih buku dari kategori yang mau di order
+                </p>
+
+            <p><b>Cart <br></b>  code</p>
+            <img src="https://drive.google.com/uc?id=19i0IJnFPgDsI9m5_2ctmdZ0xPSsuEJsB" alt="" style="height: auto;">
+            <p style="text-align: justify; text-indent: 0.5in;">Penjelasan = ini adalah tampilan untuk keranjang belanja yang terdiri beberapa kolom seperti No,Buku,Harga,Jumlah,Subharga dan session keranjang untuk subharga dari $id_buku di table data buku .
+                $pecah = $ambil->fetch_assoc();
+                $subharga =$pecah["harga"]*$jumlah;
+                    $total += $subharga;
+                Ini coding untuk penjumlahan checkoutnya
+                </p>
+
+            <p> <b>Dashboard <br></b>  code</p>
+            <img src="https://drive.google.com/uc?id=19l9uxpRfKc6UtBSOxfn6-hLE12djKC_P" alt="" style="height: auto;">
+            <p style="text-align: justify; text-indent: 0.5in;">Penjelasan: ini adalah tampilan dashboard admin dan hanya bisa diakses admin
+                Admin bisa menyimpan,menghapus,mengedit,menambah dan melihat data data buku,penerbit,pengarang,kategori,laporan,user,customer. Data – data tersebut akan bertambah di halaman halaman yang sudah ditentukan masing masing
+                </p>
+
+            <p><b>Data Buku <br></b>  code </p>
+            <img src="https://drive.google.com/uc?id=1avT8808P1lC_o0ZRE64j7USrx30iYqQ7" alt="" style="height: auto;">
+            <p style="text-align: justify; text-indent: 0.5in;"> Penjelasan = ini adalah tampilan untuk menambah data buku dibagian dashboard admin. Jika telah tertambah maka data tersebut diproses dibagian form_buku.php, data yang diinputkan yaitu Id_buku,judul_buku, pengarang, penerbit stok berat beserta gambar bukunya lalu data tersebut masuk ke database kecuali gambar buku  </p>
+
+            <p><b>Data Customer <br></b>  code </p>
+            <img src="https://drive.google.com/uc?id=1YVq8J_46Zkplxvy-WPMejS_WGFFTzYIk" alt="" style="height: auto;">
+            <p style="text-align: justify; text-indent: 0.5in;">Penjelasan = ini tampilan data customer dibagian admin.tampilan data registrasi dari customer dan bisa dilihat oleh admin. Jika di klik button tambah data maka berproses di form_customer dan data tersebut dipilih dari data customer database</p>
+
+            <p><b>Data Kategori <br></b>  code</p>
+            <img src="https://drive.google.com/uc?id=10jOznq6MBYRCQAT4_bckK6mgnoepk1A7" alt="" style="height: auto;">
+
+            <p><b>Penerbit <br> </b>  code</p>
+            <img src="https://drive.google.com/uc?id=1HA553_h_vxpKHLTRMGz6W2tzyQkkYrMV" alt="" style="height: auto;">
+
+            <p><b>Data Transaksi <br></b>  code</p>
+            <img src="https://drive.google.com/uc?id=1rfksjmSfTW5wh3p7p65fovma4XX6K3FB" alt="" style="height: auto;">
+            
+            <p><b>Data User <br></b>  code</p>
+            <img src="https://drive.google.com/uc?id=1lIypV-ApFsqeblQmiwI8U40AMH98KpCo" alt="" style="height: auto;">
+
+            <p><b>Data Pengarang <br></b>  code</p>
+            <img src="https://drive.google.com/uc?id=1OMB6PqHgZxZlKaF2gW3jg1LdtBzBdyfB" alt="" style="height: auto;">
+
+
+            <h4>c.	Build</h4>
+            <p style="text-align: justify; text-indent: 0.5in;">Aplikasi akan diperiksa secara berkala untuk mengetahui perkembangan yang terjadi dan mengevaluasi apakah produk yang dibangun sudah sesuai kebutuhan. Selanjutnya, dilakukan pengujian untuk memeriksa apakah fitur yang sudah dikerjakan pada Code sebelumnya sudah berjalan dengan baik. Jika terdapat fitur yang masih belum sesuai maka akan di perbaiki dan dikembangkan.</p>
+            <p><B>login</B></p>
+            <img src="https://drive.google.com/uc?id=1xWSY0JIwpRR_bUjaTwbX6P3Er3R1gwNV" alt="" style="height: auto;">
+            <p><b>Registrasi</b></p>
+            <img src="https://drive.google.com/uc?id=13PuWF9EC7XuPtnvZ4PGljElj_dC1jHsh" alt="" style="height: auto;">
+            <p><b>My order</b></p>
+            <img src="https://drive.google.com/uc?id=1btWzht_MRqdAnCSU9VmI5HGcI0EN0zkr" alt="" style="height: auto;">
+            <p><b>Cart</b></p>
+            <img src="https://drive.google.com/uc?id=1qUSIKGbvF05p6CEYzhnm6MSBQLfVg07D" alt="" style="height: auto;">
+            <p><b>Dashboard</b></p>
+            <img src="https://drive.google.com/uc?id=1tuoIKciY3PTJoFHag29HptxiuHTpY9Od" alt="" style="height: auto;">
+            <p><b>Data Buku</b></p>
+            <img src="https://drive.google.com/uc?id=1JUErHppiUfOVCiCuzpkzS7aMqWO5tEam" alt="data_buku" alt="" style="height: auto;">
+            <p><b>Data Customer</b></p>
+            <img src="https://drive.google.com/uc?id=1tlJ_mbK17_0Zff47_RNn3QVolQtst0Pz" alt="" style="height: auto;">
+            <p><b>Data Kategori</b></p>
+            <img src="https://drive.google.com/uc?id=1UEYn2HVj84PDCQB6EQV7otBxpi5wq-dZ" alt="" style="height: auto;">
+            <p><b>Penerbit</b></p>
+            <img src="https://drive.google.com/uc?id=13v4N7C_-6QecBZEJDG6x9v__wXQrpRJg" alt="" style="height: auto;">
+            <p><b>Data Transaksi</b></p>
+            <img src="https://drive.google.com/uc?id=1OVn6qbn3JuIaoNkYQOjt9bpKa0N3nVgn" alt="" style="height: auto;">
+            <p><b>Data User</b></p>
+            <img src="https://drive.google.com/uc?id=1OCVSJRAooUXud4BocEqJul-EGJo7gDq_" alt="" style="height: auto;">
+            <p><b>Data Pengarang</b></p>
+            <img src="https://drive.google.com/uc?id=1ciCknExxaPq_hCnqxjXD2CIswsxx8qmi" alt="" style="height: auto;">
+
+            <h4>Test</h4>
+            <p style="text-align: justify; text-indent: 0.5in;">Dalam tahap penguijan ini kami menggunakan metode pengujian blackbox berikut hasil dari pengujian black box  :</p>
+            <img src="https://drive.google.com/uc?id=1cKasgrdMaersYKQ7hz9bBpcqXAflEme3" alt="">     
 </body>
 </html>
